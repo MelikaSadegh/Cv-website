@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #EEEEEE;
+  color: #333;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  background-color: #EEEEEE;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-picture-wrapper {
+  flex-shrink: 0; 
+  margin-left: 50px; 
+  margin-top: 50px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 5px solid #DC5F00;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.language-switch {
+  margin-top: 200px;
+  text-align: left;
+  float: right;
+  border: 2px solid #DC5F00;
+}
+
+.language-switch label {
+  margin: 0 5px;
+}
+
+section {
+  background-color: #EEEEEE;
+  padding: 15px;
+  border: 3px solid #DC5F00;
+  border-radius: 40px;
+  margin-bottom: 30px;
+}
+
+.section1 {
+  background-color: #EEEEEE;
+  padding: 15px;
+  border-radius: 40px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  top: 100px; 
+  left: 50%; 
+}
+
+h2 {
+  font-size: 20px;
+  text-align: left;
+  direction: ltr;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: right;
+  direction: rtl;
+}
+
+
+p {
+  text-align: left;
+  direction: ltr;
+}
+
+.p1 {
+  text-align: right;
+  direction: rtl;
+}
+
+.p2 {
+  text-align: right;
+  direction: rtl;
+}
+
+.english-text {
+  text-align: left;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #333;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
+
+.separator span {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
